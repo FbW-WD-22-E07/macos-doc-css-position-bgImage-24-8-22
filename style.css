@@ -25,9 +25,10 @@ body {
     /* place-items: center; */
     height: 4vw;
     width: var(--doc-width);
+    /* left is calculated based on width so doc always in center */
+    left: calc((100% - var(--doc-width)) / 2);
     position: fixed;
     bottom: 2vh;
-    left: calc((100% - var(--doc-width)) / 2);
     /* background-color:  hsla(190, 100%, 76%, 0.2); */
     /* for gradient color you need background-image */
     background-image: linear-gradient(to top, hsla(243, 100%, 7%, 0.7) 0%, hsla(314, 56%, 29%, 0.5) 35%, hsla(190, 100%, 76%, 0.2) 100%);
